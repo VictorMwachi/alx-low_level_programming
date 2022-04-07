@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall $CFILE -S intel.s
+gcc -Wall $CFILE -S -masm=intel
