@@ -3,7 +3,7 @@
 /**
 *main-program entry point
 *
-*return-always 0 success
+*return:jjfrfjjjjjjjalways 0 success
 */
 int main(void)
 {
