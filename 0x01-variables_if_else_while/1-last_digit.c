@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */                                                                                                     
-/* betty style doc for function main goes the*/
+/* more headers goes there */                                                                                                                    
+/* betty style doc for function main goes the*/                                                                       
 /**
-*main-entry point
-*Return:always 0 (success)
-**/
+ * main-entry point
+ *
+ * Return:always 0 (success)
+ * */
 int main(void)                                                                                                                  
 {                                                                                                                    
 int n;                                                                                                                          
