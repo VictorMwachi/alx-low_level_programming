@@ -12,6 +12,8 @@ for (a = 48; a <=57; a++)
 {if (a!= b && a < b)
 {putchar(a);
 putchar(b);
+if(a == 56 && b == 57)
+{break; }
 putchar(',');
 putchar(' '); } } }
 putchar('\n');
