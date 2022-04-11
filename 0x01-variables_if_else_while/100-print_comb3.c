@@ -13,5 +13,5 @@ for (a = 0; a <=9; a++)
 putchar(b);
 putchar(',');
 putchar(' '); } } }
-puchar('\n');
+putchar('\n');
 return (0); }
