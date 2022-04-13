@@ -9,7 +9,7 @@ void print_to_98(int n)
 {int i, j;
 if (n < 98)
 {
-for (i = 0; i <= 98; i++)
+for (i = n ; i <= 98; i++)
 {
 if (i != 98)
 {printf("%d, ", i); }
@@ -29,4 +29,4 @@ else
 printf("%d\n", j); } } }
 else
 {j = 98;
-printf("%d\n",j); } }
+printf("%d\n", j); } }
