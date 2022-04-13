@@ -28,4 +28,5 @@ else
 {
 printf("%d\n", j); } } }
 else
-{printf("%d\n",j); } }
+{j = 98;
+printf("%d\n",j); } }
