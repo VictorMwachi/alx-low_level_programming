@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
  * mul-multiples 2 integers
+ * @a:first integer
+ * @b:second integer
  *
  * Return:returns the result
  */
