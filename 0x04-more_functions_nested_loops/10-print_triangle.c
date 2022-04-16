@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * print_triangle - prints tringle the size specified integer
+ * print_triangle - prints triangle the size specified integer
  *
  * @size: size of the triangle
  */
 void print_triangle(int size)
-{int i, s = size - 1, k;
+{int i, k, s;
+s = size - 1;
 if (size > 0)
 {
 	for(i = 0; i < size; i++)
@@ -22,4 +23,6 @@ if (size > 0)
 	}
 }
 else
-{_putchar('\n'); } }
+{
+	_putchar('\n');
+} }
