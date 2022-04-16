@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_triangle-prints tringle the sze specified
+ * print_triangle - prints tringle the size specified integer
  *
  * @size: size of the triangle
  */
@@ -22,5 +22,4 @@ if (size > 0)
 	}
 }
 else
-{_putchar('\n'); }
-}
+{_putchar('\n'); } }
