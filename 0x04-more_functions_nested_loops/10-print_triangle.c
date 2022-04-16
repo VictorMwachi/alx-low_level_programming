@@ -5,7 +5,7 @@
  * @size: size of the triangle
  */
 void print_triangle(int size)
-{int i,s = size - 1,k;
+{int i, s = size - 1, k;
 if (size > 0)
 {
 	for(i = 0; i < size; i++)
