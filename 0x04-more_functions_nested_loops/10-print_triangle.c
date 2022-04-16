@@ -2,7 +2,8 @@
 /**
  * print_triangle - prints triangle the size specified integer
  *
- * @size: size of the triangle
+ * @size: Size of the triangle
+ * Return: Always zero
  */
 void print_triangle(int size)
 {int i, k, s;
