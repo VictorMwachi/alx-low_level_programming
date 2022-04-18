@@ -15,6 +15,7 @@ void print_number(int n)
 	{
 		m = n;
 	}
+	break;
 	if (m > 9)
 	{
 		_putchar((m / 10) + '0');
