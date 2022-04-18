@@ -13,7 +13,7 @@ _putchar('-'); }
 else
 {m = n; }
 if (m > 9)
-{_putchar((m/10)+'0');
-_putchar((m%10)+'0'); }
+{_putchar((m / 10) + '0');
+_putchar((m % 10) + '0'); }
 else
 {_putchar(m + '0');} }
