@@ -5,7 +5,8 @@
  * @n: integer to be printed
  */
 void print_number(int n)
-{unsigned int m;
+{
+unsigned int m;
 if (n < 0)
 {m = -n;
 _putchar('-'); }
