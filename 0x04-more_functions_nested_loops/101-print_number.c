@@ -15,10 +15,10 @@ void print_number(int n)
 	{
 		m = n;
 	}
-	break;
+
 	if (m > 9)
 	{
-		_putchar((m / 10) + '0');
+		printf("%d",m/10);
 		_putchar((m % 10) + '0');
 	}
 	else
