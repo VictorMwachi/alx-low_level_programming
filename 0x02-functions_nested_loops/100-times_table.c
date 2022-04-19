@@ -18,7 +18,7 @@ void print_times_table(int n)
 			if (k == n)
 			{printf("%d\n" ,j); }
 			else
-			{printf("%d, " ,j); }
+			{printf("%d,  " ,j); }
 		}
 	}
 	}
