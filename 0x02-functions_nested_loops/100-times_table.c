@@ -18,7 +18,12 @@ void print_times_table(int n)
 			if (k == n)
 			{printf("%d\n" ,j); }
 			else
-			{printf("%d,   " ,j); }
+			{
+				if (j > 9)
+				{_putchar(j / 10 + '0');
+				_putchar(j % 10 + '0'); }
+				else
+				{_putchar(j + '0'); }
 		}
 	}
 	}
