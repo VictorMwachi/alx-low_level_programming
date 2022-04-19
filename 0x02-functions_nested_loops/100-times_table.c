@@ -16,8 +16,7 @@ void print_times_table(int n)
 		{
 			j = i * k;
 			if (k == n)
-			{printf("%d" ,j);
-				break;}
+			{printf("%d\n" ,j); }
 			else
 			{printf("%d, " ,j); }
 		}
