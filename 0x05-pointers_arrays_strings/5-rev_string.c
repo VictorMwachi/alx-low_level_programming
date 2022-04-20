@@ -7,9 +7,10 @@
  */
 void rev_string(char *s)
 {
-	int len = strlen(s), i;
+	/*int len = strlen(s), i;
 
 	for (i = len - 1; i >= 0; i--)
 	{putchar(s[i]); }
-	putchar('\n');
+	putchar('\n');*/
+	printf("%s",strrev(s));
 }
