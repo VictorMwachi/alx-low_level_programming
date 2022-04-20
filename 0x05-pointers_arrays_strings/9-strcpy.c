@@ -3,8 +3,9 @@
 #include <string.h>
 /**
  * _strcpy - copys a string
- * @dest:
- * @src:
+ * @dest:will hold copy of src value
+ * @src: contains string to be copied
+ * Return: returns dest
  */
 char *_strcpy(char *dest, char *src)
 {
