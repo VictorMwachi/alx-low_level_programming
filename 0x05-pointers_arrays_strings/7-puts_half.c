@@ -13,5 +13,5 @@ void puts_half(char *str)
 	{
 		if (i != '\0')
 			putchar(str[i]);
-	}
+	}putchar('\n');
 }
