@@ -8,6 +8,11 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *ptr = src;
-	return (dest = ptr);
+	int i, len = strlen(src);
+
+	for (i = 0; i <= len; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
 }
