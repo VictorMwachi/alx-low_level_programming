@@ -9,6 +9,6 @@ void puts_half(char *str)
 {
 	int i, len = strlen(str), half = (len - 1)/2;
 
-	for (i = half; i <= half + half; i++)
+	for (i = half; i <= half + half - 1; i++)
 	{
 		putchar(str[i]);} }
