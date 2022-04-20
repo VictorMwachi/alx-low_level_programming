@@ -6,8 +6,8 @@
  * @s: string to be printed
  */
 void print_rev(char *s)
-{int len = strlen(s),i;
-	for (i=len; i >=0;i--)
-	{putchar(s[i]);
-	putchar('\n');}
-}
+{
+	int len = strlen(s), i;
+	for (i = len; i >= 0; i--)
+	{putchar(s[i]); }
+	putchar('\n'); }
