@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
 /**
  * puts2 - prints any other charactor starting from first
  * @str: string to be printed
