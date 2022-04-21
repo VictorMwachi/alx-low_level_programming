@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 /**
@@ -7,6 +8,6 @@
  */
 int _atoi(char *s)
 {
-	int b = int(s);
+	int b = atoi(s);
 	return (0);
 }
