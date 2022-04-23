@@ -8,7 +8,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, len1 = strlen(dest), len2 = strlen(src) - 1;
+	int i, len1 = strlen(dest) - 1, len2 = strlen(src) - 1;
+
 	for (i = 0; i <= len2; i++)
 	{
 		if (src[i] != '\0')
