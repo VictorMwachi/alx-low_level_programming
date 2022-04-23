@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strings
+ * _strncat - concatenates two strings
  * @dest: holds a string to merged
  * @src: holds the other string to be meged
+ * @n: number of bytes from second string
  * Return: returns pointer to the resulting string
  */
 char *_strncat(char *dest, char *src, int n)
