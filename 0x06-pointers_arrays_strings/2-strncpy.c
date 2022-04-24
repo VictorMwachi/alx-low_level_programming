@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+ * _strncpy - copys a string
+ * @dest: string to be appended
+ * @src:second string
+ * @n: number of bytes
+ * Return: retuns the resulting string
+ */
+char *strncpy(char *dest, char *src, int n)
+{
+	int i, j;
+
+	while (dest[i] != 0)
+		i++;
+	while (src[j] != '\0' && j < n)
+	{
+		dest[i] = src[j];
+	}dest[i] = '\0';
+}
