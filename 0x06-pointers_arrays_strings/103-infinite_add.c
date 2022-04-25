@@ -22,7 +22,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (size_1 > (size_r - 1) || size_2 > (size_r - 1))
 		return (0);
 
-	for (i = --size_1, j = --size_2, k = 0; i >= 0 || j >= 0; k++)
+	for (i = --size_1, j = --size_2, k = 0, i >= 0 || j >= 0, k++)
 	{
 		if (i >= 0)
 			a = n1[i--] - 48;
