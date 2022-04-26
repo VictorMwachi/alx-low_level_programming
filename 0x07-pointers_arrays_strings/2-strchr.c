@@ -8,12 +8,14 @@
 char *_strchr(char *s, char c)
 {
 	int i, n;
+	char *f;
 
 	n = strlen(s);
 	for (i = 0; i < n; i++)
 	{
 		if (s[i] == c)
 		{
+			f = s[i];
 			break;
 		}
 		else
@@ -21,5 +23,5 @@ char *_strchr(char *s, char c)
 			return (NULL);
 		}
 	}
-	return (s[i]);
+	return (f);
 }
