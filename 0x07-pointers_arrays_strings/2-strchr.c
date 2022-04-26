@@ -7,8 +7,9 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i, n;
 
+	n = strlen(s);
 	for (i = 0; i < n; i++)
 	{
 		if (s[i] == c)
