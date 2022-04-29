@@ -10,6 +10,5 @@ int factorial(int n)
 
 	if (n >= 0)
 	{
-		t=n*(n-1);
-		factorial(n-1);}
-	return (t);}
+		return(n * factorial(n-1));}
+	return (0);}
