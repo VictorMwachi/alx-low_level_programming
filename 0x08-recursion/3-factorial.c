@@ -8,7 +8,7 @@ int factorial(int n)
 {
 	int t = 0;
 
-	if (n >= 0)
+	if (n > 0)
 	{t = n * factorial(n-1);}
 	return (t);
 }
