@@ -43,14 +43,34 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	for (j = 0; j < i; j++)
+	if (i > 0 && k > 0)
 	{
-		new[j] = s1[j];
+		for (j = 0; j < i; j++)
+		{
+			new[j] = s1[j];
+		}
+		for (n = i; n < len; n++)
+		{
+			new[n] = s2[len - n];
+		}
 	}
-	for (n = i; n < len; n++)
+	else
 	{
-		new[n] = s2[len - n];
-	}
+		if (i > 0)
+		{
+			for (j = 0; j < i; j++)
+			{
+				new[j] = s1[j];
+			}
+		}
+		if (k > 0)
+		{
+			for (n = 0; n < k; k++)
+			{
+				new[k] = s2[k];
+			}
+		}
+	}	
 	new[len] = '\0';
 	return (new);
 }
