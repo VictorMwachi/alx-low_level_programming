@@ -9,13 +9,11 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, k, j, n, len, len1, len2;
+	int i, k, j, n, len;
 	char *new;
 	
 	i = 0;
 	k = 0;
-	len1 = 0;
-	len2 = 0;
 	/*check if NULL is passed*/
 	if (s1 == NULL || s2 == NULL)
 	{
@@ -24,15 +22,15 @@ char *str_concat(char *s1, char *s2)
 	/*find length of s1*/
 	while (s1[i] != '\0')
 	{
-		len1++;
+		i++;
 	}
 	/*find length of s2*/
 	while (s2[k] != '\0')
 	{
-		len2++;
+		k++;
 	}
 	/*length of he new string*/
-	len = len1 + len2;
+	len = i + k;
 	new = malloc(sizeof(char) * len + 1);
 	/*check if malloc wa success*/
 	if (new == NULL)
@@ -43,7 +41,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		new[j] = s1[j];
 	}
-	for (n = len1; n < len; n++)
+	for (n = i; n < len; n++)
 	{
 		new[n] = s2[len - n];
 	}
