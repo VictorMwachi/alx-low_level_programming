@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * argstostr - cocatnates all args
  * @ac: size of av
@@ -15,7 +16,7 @@ char *argstostr(int ac, char **av)
 	}
 	while (*av++)
 	{
-		s = *v;
+		s = *av;
 		printf('\n');
 	}
 	return (s);
