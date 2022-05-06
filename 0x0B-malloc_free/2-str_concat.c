@@ -15,19 +15,25 @@ char *str_concat(char *s1, char *s2)
 	i = 0;
 	k = 0;
 	/*check if NULL is passed*/
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 	{
 		return (NULL);
 	}
 	/*find length of s1*/
-	while (s1[i] != '\0')
+	if (s1 != NULL)
 	{
-		i++;
+		while (s1[i] != '\0')
+		{
+			i++;
+		}
 	}
 	/*find length of s2*/
-	while (s2[k] != '\0')
+	if (s2 != NULL)
 	{
-		k++;
+		while (s2[k] != '\0')
+		{
+			k++;
+		}
 	}
 	/*length of he new string*/
 	len = i + k;
