@@ -1,76 +1,30 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdlib.h>
-#include <stddef.h>
+
 /**
- * str_concat - concatenates two strings.
- * @s1: string 1
- * @s2: string 2
- * Return: the new string from the two
+ * str_concat - concatenaste two strings
+ * @s1: the first string
+ * @s2: the second string
+ *
+ * Return: pointer to the concatenated string
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, k, j, n, len;
-	char *new;
-	
-	i = 0;
-	k = 0;
-	/*check if NULL is passed*/
-	if (s1 == NULL && s2 == NULL)
-	{
+	int length1 = 0, length2 = 0;
+	char *ret;
+
+	while (s1 && *s1++)
+		length1++;
+	while (s2 && *s2++)
+		length2++;
+	ret = malloc(sizeof(char) * (length1 + length2 + 1));
+	if (!ret)
 		return (NULL);
-	}
-	/*find length of s1*/
-	if (s1 != NULL)
-	{
-		while (s1[i] != '\0')
-		{
-			i++;
-		}
-	}
-	/*find length of s2*/
-	if (s2 != NULL)
-	{
-		while (s2[k] != '\0')
-		{
-			k++;
-		}
-	}
-	/*length of he new string*/
-	len = i + k;
-	new = malloc(sizeof(char) * len + 1);
-	/*check if malloc wa success*/
-	if (new == NULL)
-	{
-		return (NULL);
-	}
-	if (i > 0 && k > 0)
-	{
-		for (j = 0; j < i; j++)
-		{
-			new[j] = s1[j];
-		}
-		for (n = i; n < len; n++)
-		{
-			new[n] = s2[len - n];
-		}
-	}
-	else
-	{
-		if (i > 0)
-		{
-			for (j = 0; j < i; j++)
-			{
-				new[j] = s1[j];
-			}
-		}
-		if (k > 0)
-		{
-			for (n = 0; n < k; k++)
-			{
-				new[k] = s2[k];
-			}
-		}
-	}	
-	new[len] = '\0';
-	return (new);
+	ret += length1 + length2;
+	*ret = '\0';
+	for (s2--; length2--;)
+		*--ret = *--s2;
+	for (s1--; length1--;)
+		*--ret = *--s1;
+	return (ret);
 }
