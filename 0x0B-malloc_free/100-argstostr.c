@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdio.h>
 /**
  * argstostr - cocatnates all args
  * @ac: size of av
