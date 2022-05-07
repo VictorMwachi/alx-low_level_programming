@@ -9,15 +9,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int count;
+	int i;
 
 	if (argc > 0)
 	{
-		for (count = 0; count < argc; count++)
+		for (i = 0; i < argc; i++)
 		{
-			printf("%s\n", argv[count]);
+			printf("%s\n", argv[i]);
 		}
 	}
-	exit(EXIT_SUCCESS);
+	return (0);
 }
-
