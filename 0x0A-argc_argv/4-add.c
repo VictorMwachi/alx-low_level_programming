@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main- function that returns the sum of +ve numbs
  * @argc: counts the number of args passed
@@ -15,14 +14,12 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-
 	if (argc > 2)
 	{
 		for (i = 1; i < argc; i++)
 		{
 			int isdigit(int c);
-
-			if  (isdigit(*argv[i]) != 0)
+			if (isdigit(*argv[i]) != 0)
 			{
 				sum += atoi(argv[i]);
 			}
