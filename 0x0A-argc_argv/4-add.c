@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		{
 			int isdigit(int c);
 
-			if  (isdigit(*argv[i]) != 0 /*&& isdigit(*argv[i])>= 0*/)
+			if  (isdigit(*argv[i]) != 0)
 			{
 				sum += atoi(argv[i]);
 			}
@@ -34,5 +34,5 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", sum);
 	}
-	exit(EXIT_SUCCESS);
+	return (0);
 }
