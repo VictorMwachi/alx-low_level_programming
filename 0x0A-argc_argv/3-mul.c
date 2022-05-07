@@ -25,5 +25,5 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", product);
 	}
-	exit(EXIT_SUCCESS);
+	return (0);
 }
