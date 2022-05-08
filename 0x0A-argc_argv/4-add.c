@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main- function that returns the sum of +ve numbs
+ * main - function that returns the sum of +ve numbs
  * @argc: counts the number of args passed
  * @argv: an array of strings
  * Return: Always 0
