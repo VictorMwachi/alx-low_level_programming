@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - function that returns the sum of +ve numbs
  * @argc: counts the number of args passed
