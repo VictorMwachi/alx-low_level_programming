@@ -7,23 +7,26 @@
  */
 int main(int argc, char *argv[])
 {
+	int i, n, c = 0, COINS[] = {25, 10, 5, 2, 1};
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	money = atoi(argv[1]);
-	if (money < 0)
+	n = atoi(argv[1]);
+	if (n < 0)
 	{
 		printf("0\n");
 	}
-	else if (money != 0 && money > 0)
+	for (i = 0; i < 5; i++)
 	{
-		if (money >= 25)
+		if (n / COINS[i])
 		{
-			cents = money / 25;
-			if ((money % 25) > 0 && (money % 25) < 5)
-			{
-				cent += money %25;
-			}
-			else if (
+			c += n / COINS[i];
+			n %= COINS[i];
+		}
+	}
+	printf("%d\n", c);
+	return (0);
+}
