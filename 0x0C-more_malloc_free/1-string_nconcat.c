@@ -29,14 +29,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 	for (k = 0; k < i; k++)
-		{
-			p[k] = s1[k];
-		}
-		for (m = i; m < i + n; m++)
-		{
-			p[m] = s2[a];
-			a++;
-		}
-		p[i+n] = '\0';
+	{
+		p[k] = s1[k];
+	}
+	for (m = i; m < i + n; m++)
+	{
+		p[m] = s2[a];
+		a++;
+	}
+	p[i + n] = '\0';
 	return (p);
 }
