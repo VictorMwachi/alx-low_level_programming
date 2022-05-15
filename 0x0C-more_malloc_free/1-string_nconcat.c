@@ -6,7 +6,7 @@
  * @s2:second string
  * @n: number of bytes
  * Return: pointer to new memory location
- */
+ **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
