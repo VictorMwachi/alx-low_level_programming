@@ -28,9 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	else
-	{
-		for (k = 0; k < i; k++)
+	for (k = 0; k < i; k++)
 		{
 			p[k] = s1[k];
 		}
@@ -40,6 +38,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			a++;
 		}
 		p[i+n] = '\0';
-	}
 	return (p);
 }
