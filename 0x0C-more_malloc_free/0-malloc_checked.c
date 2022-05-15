@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * malloc_checked - allocates memory using malloc
  * @b: integer to be stored
@@ -13,4 +14,5 @@ void *malloc_checked(unsigned int b)
 		free(p);
 		exit (98);
 	}
+	return (p);
 }
