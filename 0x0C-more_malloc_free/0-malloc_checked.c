@@ -12,7 +12,6 @@ void *malloc_checked(unsigned int b)
 	p = malloc(sizeof(b));
 	if (p == NULL)
 	{
-		free(p);
 		exit(98);
 	}
 	return (p);
