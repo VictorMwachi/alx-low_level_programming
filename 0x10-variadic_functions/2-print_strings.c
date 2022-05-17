@@ -20,7 +20,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			if (str == NULL)
 			{
-				printf("nil");
+				 if (i<n-1){
+				printf("nil%s",separator);}
+				else
+				{printf("nil");}
 			}
 			else
 			{
@@ -31,7 +34,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			if (str == NULL)
 			{
-				printf("nil");
+				 if (i < n- 1){
+				printf("nil%s",separator);}
+				else
+				{printf("nil");}
 			}
 			else
 			{
