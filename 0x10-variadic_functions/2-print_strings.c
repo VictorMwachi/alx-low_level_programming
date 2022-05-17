@@ -16,24 +16,24 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		if (separator != NULL && i < n - 1)
 		{
-			if (va_arg(ap, n) == NULL)
+			if (va_arg(ap, char *) == NULL)
 			{
 				printf("nil");
 			}
 			else
 			{
-				printf("%s%s", va_arg(ap, int), separator);
+				printf("%s%s", va_arg(ap, char), separator);
 			}
 		}
 		else
 		{
-			if (va_arg(ap, n) == NULL)
+			if (va_arg(ap, char *) == NULL)
 			{
 				printf("nil");
 			}
 			else
 			{
-				printf("%s", va_arg(ap, int));
+				printf("%s", va_arg(ap, char));
 			}
 		}
 	}
