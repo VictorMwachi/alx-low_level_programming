@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * print_numbers - prints numbers followed by anew line
- * @seperator: the string to be printed between numbers
+ * @separator: the string to be printed between numbers
  * @n: the number of integers passed to the function
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
