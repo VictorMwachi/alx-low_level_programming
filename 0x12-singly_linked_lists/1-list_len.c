@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+#inlude <string.h>
 /**
  * list_len - finds the number of nodes in a list
  * @h: singly linked list
