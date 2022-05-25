@@ -8,8 +8,8 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t n;
-	for(n >= 0; h; n--)
+	int n;
+	for(n = 0; h; n--)
 	{
 		if(h->str == NULL)
 			printf("[0] (nil)");
