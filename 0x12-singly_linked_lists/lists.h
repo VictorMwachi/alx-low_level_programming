@@ -7,6 +7,7 @@
  * @next: points to the next node
  * Description: singly linked list node structure
  */
+#include <stddef.h>
 typedef struct list_s
 {
 	char *str;
