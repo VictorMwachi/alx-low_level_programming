@@ -7,12 +7,9 @@
 size_t listint_len(const listint_t *h)
 {
 	size_t n;
-	size_t count = 0;
 
 	for (n = 0; h != NULL; n++)
 	{
-		if (h->n != NULL)
-			count++;
 	}
-	return (count);
+	return (n);
 }
