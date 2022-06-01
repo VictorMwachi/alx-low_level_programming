@@ -3,7 +3,7 @@
  * print_binary - prints a binary of a number
  * @n: nunmber to be converted to binary
  */
-void print_number(unsigned int long n)
+void print_binary(unsigned int long n)
 {
 	if (n > 1)
 		print_binary(n >> 1);
