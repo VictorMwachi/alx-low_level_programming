@@ -20,8 +20,8 @@ unsigned int _pow(unsigned int a, unsigned int b)
 }
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0;
-	unsigned int bin;
+	int i = 0, l;
+	unsigned int bin = 0;
 
 	if (!b)
 		return (0);
@@ -32,6 +32,10 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 			return (0);
-	for (l = 0;l<i b[i]!='\0'; i--)
-		bin =
-
+	for (l = 0; l < i && b[l] !='\0'; l++)
+	{
+		bin +=_stoi(b[l])*_pow(2,i);
+		i--;
+	}
+	return (bin);
+}
