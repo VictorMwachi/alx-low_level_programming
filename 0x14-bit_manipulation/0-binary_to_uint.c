@@ -9,13 +9,15 @@ unsigned int _stoi(char c)
 {
 		return ((unsigned int) c - '0');
 }
-unsigned int _pow(unsigned int a, unsigned int b)
+unsigned int _pow(unsigned int n, unsigned int e)
 {
 	unsigned int expo = 1;
 
-	while (b > 0)
-		expo *= a;
-		b--;
+	while (e > 0)
+	{
+		expo *= n;
+		e--;
+	}
 	return (expo);
 }
 unsigned int binary_to_uint(const char *b)
