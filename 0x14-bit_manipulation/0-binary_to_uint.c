@@ -1,10 +1,19 @@
 #include "main.h"
-
+/*
+ * _stoi - convers char to unsigned int
+ * @c: character to be converted
+ * Return: unsigned int
+ */
 unsigned int _stoi(char c)
 {
 		return ((unsigned int) c - '0');
 }
-/**/
+/**
+ * _pow - returns power
+ * @n: base number
+ * @e: exponent
+ * Return: the result
+ */
 unsigned int _pow(unsigned int n, unsigned int e)
 {
 	unsigned int expo = 1;
