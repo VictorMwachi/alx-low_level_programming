@@ -33,6 +33,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 			return (0);
+	i = i - 1;
 	for (l = 0; l < i ; l++)
 	{
 		bin +=_stoi(b[l])*_pow(2,i - 1);
