@@ -27,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 	if (!b)
 		return (0);
 	while (b[i] != '\0')
-		if (b[i] =='0' || b[i] == '1')
+		if (b[i] == '0' || b[i] == '1')
 		{
 			i++;
 		}
@@ -36,7 +36,7 @@ unsigned int binary_to_uint(const char *b)
 	i = i - 1;
 	for (l = 0; l < i ; l++)
 	{
-		bin +=_stoi(b[l])*_pow(2,i - 1);
+		bin += _stoi(b[l]) * _pow(2, i - 1);
 		i--;
 	}
 	return (bin);
