@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * _stoi - convers char to unsigned int
  * @c: character to be converted
  * Return: unsigned int
