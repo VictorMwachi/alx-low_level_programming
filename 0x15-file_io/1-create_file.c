@@ -27,6 +27,8 @@ int create_file(const char *filename, char *text_content)
 			len++;
 	}
 	}
+	else
+		text_content ="";
 	wrtf = write(fd, text_content, len);
 	if (wrtf == -1)
 	{
