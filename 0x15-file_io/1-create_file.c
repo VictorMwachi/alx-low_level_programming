@@ -21,15 +21,18 @@ int create_file(const char *filename, char *text_content)
 	len = 0;
 	if (text_content != NULL)
 	{
-	while (*text_content++ != '\0')
-		len++;
+	while (*text_content++)
+	{
+		if (*text_content !='\0')
+			len++;
+	}
+	}
 	wrtf = write(fd, text_content, len);
 	if (wrtf == -1)
 	{
 		write(1, "fails", 6);
 		return (-1);
 	}
-	close(fd);
-	}
+	close(fd);	
 	return (1);
 }
