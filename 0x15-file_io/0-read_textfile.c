@@ -2,7 +2,7 @@
 /**
  * read_textfile - reads textfile and prints to the POSIX standard output
  * @filename: file ponter
- * letters: number of letters it should read and print
+ * @letters: number of letters it should read and print
  * Return: actual number of letters it could read and print
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -19,9 +19,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buf = malloc(sizeof(char) * letters);
 	if (!buf)
 		return (0);
-	rdf = read(fd, buf,letters);
+	rdf = read(fd, buf, letters);
 	wrtf = write(STDOUT_FILENO, buf, rdf);
-	close (fd);
-	free (buf);
+	close(fd);
+	free(buf);
 	return (wrtf);
 }
