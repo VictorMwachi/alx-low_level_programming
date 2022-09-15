@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""perimetr module"""
-
+"""
+perimeter module
+"""
 def island_perimeter(grid):
-
     """returns the perimeter of an island"""
+    
+    
     per=0
     for row in grid:
         for val in row:
